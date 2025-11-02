@@ -1,10 +1,11 @@
 import React from "react";
 import { Accordion, AccordionPanel, AccordionTitle, AccordionContent } from "flowbite-react";
+import { accordionTheme } from "./accordionTheme";
 
 export default function AccordionComponent() {
   return (
     <div className="max-w-4xl mx-auto p-6">
-      <Accordion collapseAll>
+     <Accordion collapseAll theme={accordionTheme}>
 
         {/* Why FortiNExis */}
         <AccordionPanel>
