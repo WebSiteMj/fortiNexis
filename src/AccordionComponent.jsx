@@ -5,76 +5,56 @@ export default function AccordionComponent() {
   return (
     <div className="max-w-4xl mx-auto p-6">
       <Accordion collapseAll>
+
+        {/* Why FortiNExis */}
         <AccordionPanel>
-          <AccordionTitle>What is Flowbite?</AccordionTitle>
+          <AccordionTitle>Why Smart, Secure, Multi-Sector Digital Innovation</AccordionTitle>
           <AccordionContent>
             <p className="mb-2 text-gray-700 dark:text-gray-400 font-medium">
-              Flowbite is an open-source library of interactive components built on top of Tailwind CSS including buttons,
-              dropdowns, modals, navbars, and more.
-            </p>
-            <p className="text-gray-700 dark:text-gray-400 font-medium">
-              Check out this guide to learn how to&nbsp;
-              <a
-                href="https://flowbite.com/docs/getting-started/introduction/"
-                className="text-cyan-600 hover:underline dark:text-cyan-500 font-semibold"
-              >
-                get started
-              </a>
-              &nbsp;and start developing websites faster with components on top of Tailwind CSS.
+              We are a new digital innovation company using <strong>AI, Azure Cloud, and blockchain</strong> to transform healthcare, real estate, community services, fintech, and private crypto trading in Luxembourg.
             </p>
           </AccordionContent>
         </AccordionPanel>
 
+        {/* Problem */}
         <AccordionPanel>
-          <AccordionTitle>Is there a Figma file available?</AccordionTitle>
+          <AccordionTitle>Problem</AccordionTitle>
           <AccordionContent>
-            <p className="mb-2 text-gray-700 dark:text-gray-400 font-medium">
-              Flowbite is first conceptualized and designed using Figma, so everything in the library has a design equivalent.
-            </p>
-            <p className="text-gray-700 dark:text-gray-400 font-medium">
-              Check out the
-              <a
-                href="https://flowbite.com/figma/"
-                className="text-cyan-600 hover:underline dark:text-cyan-500 font-semibold"
-              >
-                Figma design system
-              </a>
-              &nbsp;based on Tailwind CSS utilities and Flowbite components.
-            </p>
-          </AccordionContent>
-        </AccordionPanel>
-
-        <AccordionPanel>
-          <AccordionTitle>Differences between Flowbite and Tailwind UI?</AccordionTitle>
-          <AccordionContent>
-            <p className="mb-2 text-gray-700 dark:text-gray-400 font-medium">
-              Flowbite is open-source under MIT, Tailwind UI is paid. Flowbite has smaller standalone components; Tailwind UI offers full page sections.
-            </p>
-            <p className="mb-2 text-gray-700 dark:text-gray-400 font-medium">
-              You can use both Flowbite, Flowbite Pro, and Tailwind UI together.
-            </p>
-            <p className="mb-2 text-gray-700 dark:text-gray-400 font-medium">Learn more:</p>
-            <ul className="list-disc pl-5 text-gray-700 dark:text-gray-400 font-medium">
-              <li>
-                <a
-                  href="https://flowbite.com/pro/"
-                  className="text-cyan-600 hover:underline dark:text-cyan-500 font-semibold"
-                >
-                  Flowbite Pro
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://tailwindui.com/"
-                  rel="nofollow"
-                  className="text-cyan-600 hover:underline dark:text-cyan-500 font-semibold"
-                >
-                  Tailwind UI
-                </a>
-              </li>
+            <ul className="list-disc pl-5 mb-2 text-gray-700 dark:text-gray-400 font-medium space-y-1">
+              <li>Fragmented healthcare scheduling and payments.</li>
+              <li>Inefficient real estate transactions and notary coordination.</li>
+              <li>Disconnected community services.</li>
+              <li>Limited secure platforms for private crypto trading.</li>
             </ul>
           </AccordionContent>
         </AccordionPanel>
+
+        {/* Solution */}
+        <AccordionPanel>
+          <AccordionTitle>Solution</AccordionTitle>
+          <AccordionContent>
+            <ul className="list-disc pl-5 mb-2 text-gray-700 dark:text-gray-400 font-medium space-y-1">
+              <li>Healthcare: AI-driven appointment scheduling and verified doctor reviews with blockchain-secured payments.</li>
+              <li>Real Estate: AI-assisted property search, blockchain-secured transactions, and automated notary scheduling.</li>
+              <li>Community & FinTech: Unified platforms for engagement, local services, microfinance, and secure payments.</li>
+              <li>Private Crypto Exchange: Secure, AI-supported trading of Bitcoin and other cryptocurrencies.</li>
+            </ul>
+          </AccordionContent>
+        </AccordionPanel>
+
+        {/* Technology & Impact */}
+        <AccordionPanel>
+          <AccordionTitle>Technology Advantage & Impact</AccordionTitle>
+          <AccordionContent>
+            <p className="mb-2 text-gray-700 dark:text-gray-400 font-medium">
+              <strong>Technology Advantage:</strong> AI intelligence, Azure Cloud scalability, and blockchain security create a trusted, efficient, and decentralized ecosystem.
+            </p>
+            <p className="mb-2 text-gray-700 dark:text-gray-400 font-medium">
+              <strong>Impact:</strong> We address inefficiencies, improve transparency, and unlock new opportunities, positioning Luxembourg as a hub for smart, multi-sector digital innovation.
+            </p>
+          </AccordionContent>
+        </AccordionPanel>
+
       </Accordion>
     </div>
   );
