@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "flowbite-react";
-import AccordionComponent from "./AccordionComponent";
+import AccordionComponent from "./components/AccordionComponent";
+import HeroComponent from "./components/HeroComponent";
 
 
 
@@ -9,17 +10,9 @@ export default function App() {
  <div className="min-h-screen bg-gradient-to-br from-blue-200 to-blue-300 flex flex-col items-center justify-start relative overflow-hidden">
 
 
-
       {/* Hero Section */}
-      <div className="relative z-10 flex flex-col items-center text-center mt-16 px-6 space-y-6">
-        <h1 className="text-6xl md:text-7xl font-extrabold tracking-wide font-montserrat">
-          FORTI NEXIS
-        </h1>
-        <p className="text-xl md:text-2xl font-montserrat text-red-600">
-          Empowering businesses with intelligent automation and cloud solutions.
-        </p>
-       
-      </div>
+     
+      <HeroComponent />
 
       {/* Optional floating triangles */}
       <div className="triangle triangle-1"></div>
@@ -29,6 +22,7 @@ export default function App() {
       <div className="w-full mt-24">
         <AccordionComponent />
       </div>
+
 
     </div>
   );
