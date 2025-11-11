@@ -8,21 +8,21 @@
 @tailwind utilities;
 
 /* Then import Flowbite */
-@import "flowbite/src/themes/default";
+/* @import "flowbite/src/themes/default";
 @plugin "flowbite/plugin";
-@source "../node_modules/flowbite";
+@source "../node_modules/flowbite"; */
 
 
 
 /* --- Base/Global Styles (Custom CSS + @apply) --- */
 body {
   margin: 0;
-  /* Updated: Removed 'Montserrat' and related system fallbacks specific to it */
+
   font-family: sans-serif; /* Use a generic sans-serif as default, or Tailwind's 'font-sans' */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  @apply min-h-screen flex items-center justify-center relative overflow-hidden;
+  /* @apply min-h-screen flex items-center justify-center relative overflow-hidden; */
   background: linear-gradient(135deg, #BFDBFE, #93C5FD); /* light blue gradient */
 }
 
