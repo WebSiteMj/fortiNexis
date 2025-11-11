@@ -40,7 +40,8 @@ export default function App() {
   ];
 
   return (
- <div className="min-h-screen bg-gradient-to-br from-blue-200 to-blue-300 flex flex-col items-center justify-start relative overflow-hidden">
+ <div className="min-h-screen bg-gradient-to-br from-blue-200 to-blue-300 flex 
+ flex-col items-center justify-start relative overflow-hidden">
 
 
       {/* Hero Section */}
@@ -76,6 +77,7 @@ export default function App() {
 
       {/* Accordion Section */}
       <div className="w-full mt-24">
+       {/* <div className="max-w-4xl mx-auto px-4"> Added a max-width and centering for the accordion itself */}
         <AccordionComponent />
       </div>
 
