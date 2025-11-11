@@ -8,7 +8,9 @@
 @tailwind utilities;
 
 /* Then import Flowbite */
-@import "flowbite";
+@import "flowbite/src/themes/default";
+@plugin "flowbite/plugin";
+@source "../node_modules/flowbite";
 
 
 
@@ -37,15 +39,15 @@ h1, h2, h3 {
 p {
   
   font-family: sans-serif; /* Use a generic sans-serif or your 'font-calligraphy' here if desired */
-  color: #dc262f;
+  color: #012144;
   text-align: center;
 }
 
 /* Button styling */
 button {
   @apply px-6 py-3 rounded-lg font-semibold shadow-lg transition-all;
-  background-color: #111827; /* dark button */
-  color: #dc2654; /* red text */
+  background-color: #502791; /* dark button */
+  color: #5726dc; /* red text */
 }
 button:hover {
   background-color: #374151;
@@ -55,7 +57,7 @@ button:hover {
 .triangle {
   position: absolute;
   opacity: 0.15;
-  background-color: #D1D5DB;
+  background-color: #506380;
   clip-path: polygon(0 0, 100% 0, 100% 100%);
   transform: rotate(45deg);
   animation: float 10s ease-in-out infinite alternate;
