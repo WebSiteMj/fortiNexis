@@ -20,7 +20,7 @@ export default function HeaderComponent() {
           <div className="flex-shrink-0 cursor-pointer flex items-center gap-2">
             {/* Optional: Add an icon or image here if needed */}
             <h1 className="text-2xl font-bold tracking-wide whitespace-nowrap">
-              MjPortfolio
+             Forti Nexis 
             </h1>
           </div>
 
