@@ -1,5 +1,7 @@
 import React from "react";
 import logo from "../assets/logo.svg";
+
+import desktop from "../assets/s_banner_2.svg";
 import { Button } from "flowbite-react";
 
 export default function HeroComponent() {
@@ -20,7 +22,12 @@ export default function HeroComponent() {
 
        <h5>Why Smart, Secure, Multi-Sector Digital Innovation”
 
-We are a new digital innovation company using AI, Azure Cloud, and blockchain to transform healthcare, real estate, community, fintech, and private crypto trading in Luxembourg.</h5>
+        We are a new digital innovation company using AI, Azure Cloud, and blockchain to transform healthcare, real estate, community, fintech, and private crypto trading in Luxembourg.</h5>
+        <img
+          src={desktop}
+          alt="Company Logo"
+          className="h-44 md:h-124 w-auto" // Adjust height as needed, w-auto maintains aspect ratio
+        /> 
         {/* <p className="text-xl md:text-2xl font-montserrat text-red-600">
           Empowering businesses with intelligent automation and cloud solutions.
         </p> */}
