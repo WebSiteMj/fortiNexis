@@ -34,7 +34,7 @@ export default function FooterComponent() {
             <div className="space-y-4">
               {/* Gradient Text matches Header */}
               <h2 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-sky-400">
-                MjPortfolio
+                Forti Nexis
               </h2>
               <p className="text-slate-400 text-sm leading-relaxed">
                 Dedicated experts driving our innovation. We build digital solutions 
@@ -70,7 +70,7 @@ export default function FooterComponent() {
               <ul className="space-y-3 text-slate-400 text-sm">
                 <li className="flex items-center gap-2">
                   <HiMapPin className="w-5 h-5 text-purple-400" />
-                  <span>6833 Innovation Dr, Luxembourg</span>
+                  <span>6833 Innovation Bd, Luxembourg</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <HiPhone className="w-5 h-5 text-purple-400" />
@@ -78,7 +78,7 @@ export default function FooterComponent() {
                 </li>
                 <li className="flex items-center gap-2">
                   <HiEnvelope className="w-5 h-5 text-purple-400" />
-                  <span>websiteMj@mhotmail.com</span>
+                  <span>websiteMj@hotmail.com</span>
                 </li>
               </ul>
             </div>
