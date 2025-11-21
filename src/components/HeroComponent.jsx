@@ -24,9 +24,9 @@ We are a new digital innovation company using AI, Azure Cloud, and blockchain to
         {/* <p className="text-xl md:text-2xl font-montserrat text-red-600">
           Empowering businesses with intelligent automation and cloud solutions.
         </p> */}
-     
+     <h6>Join us on our mission to revolutionize industries through cutting-edge technology and secure digital solutions.</h6>
        <Button className="bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 text-white hover:bg-gradient-to-br focus:ring-purple-300 dark:focus:ring-purple-800">
-      Get Started Empowering businesses with intelligent automation and cloud solutions.
+      Get Started 
       </Button>
       </div>
       );

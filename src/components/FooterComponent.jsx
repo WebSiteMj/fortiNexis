@@ -67,15 +67,15 @@ export default function FooterComponent() {
               <ul className="space-y-3 text-gray-300 text-sm">
                 <li className="flex items-center gap-2">
                   <HiMapPin className="w-5 h-5 text-green-400" />
-                  <span>123 Innovation Dr, Luxembourg</span>
+                  <span>6833 Innovation Dr, Luxembourg</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <HiPhone className="w-5 h-5 text-green-400" />
-                  <span>+352 661 831 003</span>
+                  <span>+352 661 831 113</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <HiEnvelope className="w-5 h-5 text-green-400" />
-                  <span>contact@mjportfolio.com</span>
+                  <span>websiteMj@mhotmail.com</span>
                 </li>
               </ul>
             </div>
@@ -83,7 +83,7 @@ export default function FooterComponent() {
 
           {/* Bottom Bar: Copyright */}
           <div className="border-t border-gray-600 mt-12 pt-6 text-center text-sm text-gray-400">
-            <p>&copy; {new Date().getFullYear()} MjPortfolio. All Rights Reserved.</p>
+            <p>&copy; {new Date().getFullYear()} Madiha Jabee. All Rights Reserved.</p>
           </div>
         </div>
       </footer>
