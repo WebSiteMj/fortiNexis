@@ -4,9 +4,8 @@ import AccordionComponent from "./components/AccordionComponent";
 import HeroComponent from "./components/HeroComponent";
 // import { cardComponent as CardComponent } from "./components/CardComponent";
 import FooterComponent from "./components/FooterComponent";
+import HeaderComponent from "./components/HeaderComponent";
 
-// import { HiAcademicCap } from "@preact-icons/hi2";
-// import { HiCheck, HiXMark, HiMiniUser } from "@preact-icons/hi2";
 
 export default function App() {
    const services = [
@@ -45,7 +44,7 @@ export default function App() {
   return (
  <div className="min-h-screen bg-gradient-to-br from-blue-200 to-blue-300 flex 
  flex-col items-center justify-start relative overflow-hidden">
-
+<HeaderComponent />
 
       {/* Hero Section */}
      
