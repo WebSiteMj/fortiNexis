@@ -3,9 +3,9 @@
 
 import { Button, Drawer, DrawerHeader, DrawerItems, Label, Textarea, TextInput } from "flowbite-react";
 import { useState } from "react";
-import { HiEnvelope } from "react-icons/hi2";
+// import { HiEnvelope } from "react-icons/hi2";
 
-export function Component() {
+export default function ContactComponent() {
   const [isOpen, setIsOpen] = useState(true);
 
   const handleClose = () => setIsOpen(false);
