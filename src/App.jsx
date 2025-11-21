@@ -5,8 +5,8 @@ import HeroComponent from "./components/HeroComponent";
 // import { cardComponent as CardComponent } from "./components/CardComponent";
 import FooterComponent from "./components/FooterComponent";
 
-
-
+// import { HiAcademicCap } from "@preact-icons/hi2";
+// import { HiCheck, HiXMark, HiMiniUser } from "@preact-icons/hi2";
 
 export default function App() {
    const services = [
@@ -86,8 +86,14 @@ export default function App() {
       <div className="w-full mt-24">
        {/* <div className="max-w-4xl mx-auto px-4"> Added a max-width and centering for the accordion itself */}
         {/* <AccordionComponent /> */}
-
+{/* <div>
+<HiAcademicCap />
+<p>Welcome to React Icons HI2!</p>
+</div> */}
       </div>
+
+
+
 
     <FooterComponent />
     </div>
