@@ -10,8 +10,7 @@ export default function HeaderComponent() {
 
   return (
     // Removed 'container' and 'mx-auto' to allow full-width stretching
-    <header className="bg-[#2F4F4F] text-white shadow-lg sticky top-0 z-50 w-full">
-      
+         <header className="bg-[#1E293B] text-slate-200 shadow-lg sticky top-0 z-50 w-full border-b border-slate-700">   
       {/* w-full ensures it uses 100% width, px classes keep slight padding from the edges */}
       <div className="w-full px-4 sm:px-8 lg:px-12">
         <div className="flex items-center justify-between h-20">
@@ -19,7 +18,7 @@ export default function HeaderComponent() {
           {/* 1. LOGO SECTION */}
           <div className="flex-shrink-0 cursor-pointer flex items-center gap-2">
             {/* Optional: Add an icon or image here if needed */}
-            <h1 className="text-2xl font-bold tracking-wide whitespace-nowrap">
+           <h1 className="text-2xl font-bold tracking-wide whitespace-nowrap text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-sky-400">
              Forti Nexis 
             </h1>
           </div>
@@ -32,7 +31,7 @@ export default function HeaderComponent() {
             </div>
             <input
               type="text"
-              className="block w-full pl-10 pr-3 py-2 border border-transparent rounded-full leading-5 bg-[#1f3636] text-white placeholder-gray-400 focus:outline-none focus:bg-white focus:text-gray-900 sm:text-sm transition duration-300"
+              className="block w-full pl-10 pr-3 py-2 border border-transparent rounded-full leading-5 bg-[#334155] text-white placeholder-slate-400 focus:outline-none focus:bg-slate-600 focus:ring-2 focus:ring-sky-400 sm:text-sm transition duration-300 shadow-inner"
               placeholder="Search services, projects..."
             />
           </div>
@@ -82,7 +81,7 @@ export default function HeaderComponent() {
                 </div>
                 <input
                   type="text"
-                  className="block w-full pl-10 pr-3 py-3 rounded-md bg-[#1f3636] text-white placeholder-gray-400 focus:bg-white focus:text-gray-900 focus:outline-none"
+                  className="block w-full pl-10 pr-3 py-3 rounded-md bg-[#1E293B] text-white placeholder-slate-400 focus:bg-[#334155] focus:text-white focus:outline-none shadow-inner border border-slate-700"
                   placeholder="Search..."
                 />
             </div>
