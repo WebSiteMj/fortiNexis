@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../assets/logo.svg";
 
-import desktop from "../assets/s_banner_2.svg";
+import desktop from "../assets/Blogbanners.jpg";
 
 export default function HeroComponent() {
   return (
@@ -17,11 +17,13 @@ export default function HeroComponent() {
           className="h-44 md:h-124 w-auto" // Adjust height as needed, w-auto maintains aspect ratio
         />
         </div>  
-       <h3> Smart, Secure, Multi-Sector Digital Innovation </h3>
+       <h3 className="text-4xl md:text-5xl font-bold tracking-wide font-montserrat"> 
+        Smart, Secure, Multi-Sector Digital Innovation </h3>
 
-       <h5>Why Smart, Secure, Multi-Sector Digital Innovation”
-
-        We are a new digital innovation company using AI, Azure Cloud, and blockchain to transform healthcare, real estate, community, fintech, and private crypto trading in Luxembourg.</h5>
+       <h4 className="text-3xl md:text-5xl font-bold tracking-wide font-montserrat">
+        Why Smart, Secure, Multi-Sector Digital Innovation”</h4>
+<h4 className="text-1xl md:text-3xl font-bold tracking-wide font-montserrat">
+        We are a new digital innovation company using AI, Azure Cloud, and blockchain to transform healthcare, real estate, community, fintech, and private crypto trading in Luxembourg.</h4>
         <img
           src={desktop}
           alt="Company Logo"
