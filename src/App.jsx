@@ -11,8 +11,8 @@ import ContactDrawerComponent from "./components/ContactDrawerComponent";
 
 
 export default function App() {
-  //  const [isContactOpen, setIsContactOpen] = useState(false);
-   const [isOpen, setIsOpen] = useState(false);
+   const [isContactOpen, setIsContactOpen] = useState(false);
+  //  const [isOpen, setIsOpen] = useState(false);
    const services = [
     {
       title: "Cloud Migration",
@@ -49,29 +49,28 @@ export default function App() {
   return (
  <div className="min-h-screen bg-gradient-to-br from-blue-200 to-blue-300 flex 
  flex-col items-center justify-start relative overflow-hidden">
-<HeaderComponent />
-
-      {/* Hero Section */}
-     
+    
+    <HeaderComponent />
     <HeroComponent />
-    {/* <CardComponent services={services} /> */}
-  {/* BUTTON: This opens the Contact Component */}
-      {/* <div className="mt-8 mb-12 z-20">
-        <Button 
-            onClick={() => setIsContactOpen(true)}
-            className="px-8 py-2 bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 text-white hover:bg-gradient-to-br focus:ring-4 focus:ring-purple-800 shadow-lg hover:scale-105 transition-transform"
-        >
-            <span className="text-lg font-bold">Get Started</span>
-        </Button>
-      </div> */}
-    <div>
+   
+    {/* <div>
       <button className="mt-4" onClick={() => setIsOpen(true)}>Get Started</button>
       {isOpen && <ContactDrawerComponent onClose={() => setIsOpen(false)} />}
-    </div>
+    </div> */}
+
+        {/* 4. THE BUTTON: Sets state to TRUE (Opens Drawer) */}
+      <div className="mt-8 mb-12 z-20">
+        <Button 
+            onClick={() => setIsContactOpen(true)}
+            className="px-8 py-2 bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 text-white font-bold"
+        >
+            Get Started
+        </Button>
+      </div>
 
 
       {/* card section */}
- <div className="relative z-10 flex flex-col items-center text-center mt-16 px-6 space-y-6 w-full max-w-6xl">
+        <div className="relative z-10 flex flex-col items-center text-center mt-16 px-6 space-y-6 w-full max-w-6xl">
             <h1 className="text-4xl md:text-5xl font-extrabold tracking-wide font-montserrat text-gray-800 mb-8">
               Our Services
             </h1>
@@ -124,7 +123,11 @@ export default function App() {
 
    
 
-      {/* 3. Drop the component here */}
+      {/* 5. THE COMPONENT: Pass the State and the Close Function */}
+      <ContactDrawerComponent 
+        isOpen={isContactOpen} 
+        onClose={() => setIsContactOpen(false)} 
+      />
      
 
     <FooterComponent />
