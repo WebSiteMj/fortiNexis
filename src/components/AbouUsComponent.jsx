@@ -1,3 +1,4 @@
+// will use later
 import React from "react";
 import backlogo from "../assets/digitalizaitionn.png";
 export default function AboutUSComponent() {

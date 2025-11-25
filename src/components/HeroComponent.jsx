@@ -2,7 +2,6 @@ import React from "react";
 import logo from "../assets/logo.svg";
 
 import desktop from "../assets/s_banner_2.svg";
-import { Button } from "flowbite-react";
 
 export default function HeroComponent() {
   return (
@@ -28,13 +27,9 @@ export default function HeroComponent() {
           alt="Company Logo"
           className="h-44 md:h-124 w-auto" // Adjust height as needed, w-auto maintains aspect ratio
         /> 
-        {/* <p className="text-xl md:text-2xl font-montserrat text-red-600">
-          Empowering businesses with intelligent automation and cloud solutions.
-        </p> */}
+       
      <h6>Join us on our mission to revolutionize industries through cutting-edge technology and secure digital solutions.</h6>
-       <Button className="bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 text-white hover:bg-gradient-to-br focus:ring-purple-300 dark:focus:ring-purple-800">
-      Get Started 
-      </Button>
+      
       </div>
       );
 }
