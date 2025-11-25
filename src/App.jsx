@@ -6,12 +6,13 @@ import HeroComponent from "./components/HeroComponent";
 // import { cardComponent as CardComponent } from "./components/CardComponent";
 import FooterComponent from "./components/FooterComponent";
 import HeaderComponent from "./components/HeaderComponent";
-// import MyModal from "./components/MyModal";
+import LearnMoreComponent from "./components/LearnMoreComponent";
 import ContactDrawerComponent from "./components/ContactDrawerComponent";
 
 
 export default function App() {
    const [isContactOpen, setIsContactOpen] = useState(false);
+   const [showLearnMore, setShowLearnMore] = useState(false);
   //  const [isOpen, setIsOpen] = useState(false);
    const services = [
     {
@@ -30,7 +31,7 @@ export default function App() {
       icon: "📊"
     },
     {
-      title: "Security Solutions",
+      title: "Fintech Solutions",
       description: "Protect your digital assets with robust cybersecurity strategies and tools.",
       icon: "🔒"
     },
@@ -53,13 +54,9 @@ export default function App() {
     <HeaderComponent />
     <HeroComponent />
    
-    {/* <div>
-      <button className="mt-4" onClick={() => setIsOpen(true)}>Get Started</button>
-      {isOpen && <ContactDrawerComponent onClose={() => setIsOpen(false)} />}
-    </div> */}
 
-        {/* 4. THE BUTTON: Sets state to TRUE (Opens Drawer) */}
-      <div className="mt-8 mb-12 z-20">
+    {/* 4. THE BUTTON: Sets state to TRUE (Opens Drawer) */}
+    <div className="mt-8 mb-12 z-20">
         <Button 
             onClick={() => setIsContactOpen(true)}
             className="px-8 py-2 bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 text-white font-bold"
@@ -88,12 +85,25 @@ export default function App() {
                   <p className="font-normal text-gray-700 dark:text-gray-400">
                     {service.description}
                   </p>
-                  <Button className="mt-4">Learn More</Button>
+                   <Button 
+                    onClick={() => setShowLearnMore(true)}
+                    className="w-full bg-purple-600 hover:bg-purple-700 focus:ring-purple-800"
+                >
+                    Learn More
+                </Button>
+
+                   {/*}
+                    {showLearnMore && (
+                      <LearnMoreComponent onClose={() => setShowLearnMore(false)} />
+                    )} */}
                 </Card>
               ))}
             </div>
         </div>
     
+ {showLearnMore && (
+        <LearnMoreComponent onClose={() => setShowLearnMore(false)} />
+      )}
 
 
       {/*  floating triangles */}
