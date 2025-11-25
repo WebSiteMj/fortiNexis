@@ -5,11 +5,11 @@ import { Button, Card } from "flowbite-react";
 import { HiCloud, HiCpuChip, HiChartBar, HiShieldCheck, HiCog, HiCodeBracket } from "react-icons/hi2";
 import LearnMoreComponent from "./LearnMoreComponent";
 
-export default function CardComponent() {
+export default function CardComponent({ openContact }) {
   // 1. CHANGE STATE: Stores the 'object' of the clicked service, or 'null' if closed
   const [selectedService, setSelectedService] = useState(null);
 
-  // 2. UPDATE DATA: Add 'details' (Long text for the modal)
+  
   const services = [
     {
       title: "Cloud Migration",
@@ -89,7 +89,8 @@ export default function CardComponent() {
       {selectedService && (
         <LearnMoreComponent 
             service={selectedService} 
-            onClose={() => setSelectedService(null)} 
+            onClose={() => setSelectedService(null)}
+            onContact={openContact} 
         />
       )}
     </div>

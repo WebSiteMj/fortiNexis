@@ -4,7 +4,7 @@ import React from "react";
 import { HiXMark, HiCheckBadge } from "react-icons/hi2";
 
 // 1. Accept 'service' as a prop
-export default function LearnMoreComponent({ service, onClose }) {
+export default function LearnMoreComponent({ service, onClose, onContact  }) {
   
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm p-4 animate-fade-in">
@@ -63,7 +63,7 @@ export default function LearnMoreComponent({ service, onClose }) {
                  </div>
               </div>
 
-              {/* Right Side: Key Benefits (Static for now, or you can make dynamic too) */}
+              {/* Right Side: Key Benefits */}
               <div className="bg-[#0F172A] p-6 rounded-xl border border-slate-700 h-fit">
                  <h4 className="text-lg font-bold text-sky-400 mb-4 border-b border-slate-700 pb-2">
                     Key Benefits
@@ -100,9 +100,9 @@ export default function LearnMoreComponent({ service, onClose }) {
           >
             Close
           </button>
-          <button 
-            onClick={onClose} 
-            className="px-6 py-2 rounded-lg bg-gradient-to-r from-purple-600 to-sky-600 hover:from-purple-700 hover:to-sky-700 text-white font-bold shadow-lg transition-all"
+         <button 
+            onClick={onContact} 
+            className="px-6 py-2 bg-gradient-to-r from-purple-600 to-sky-600 hover:from-purple-700 hover:to-sky-700 text-white font-bold rounded-lg shadow-lg"
           >
             Contact Sales
           </button>

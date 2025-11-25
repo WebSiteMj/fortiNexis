@@ -36,8 +36,8 @@ export default function App() {
 
       {/* card section */}
  
-
-      <CardComponent />
+    {/*  pass 'openContact' so the "Contact Sales" button inside the cards works */}
+      <CardComponent openContact={() => setIsContactOpen(true)} />
 
       {/*  floating triangles */}
       <div className="triangle triangle-1"></div>
