@@ -1,3 +1,4 @@
+import { useState } from "react";
 import React from "react";
 import { Button, Card, Footer } from "flowbite-react";
 import AccordionComponent from "./components/AccordionComponent";
@@ -5,9 +6,13 @@ import HeroComponent from "./components/HeroComponent";
 // import { cardComponent as CardComponent } from "./components/CardComponent";
 import FooterComponent from "./components/FooterComponent";
 import HeaderComponent from "./components/HeaderComponent";
+// import MyModal from "./components/MyModal";
+import ContactDrawerComponent from "./components/ContactDrawerComponent";
 
 
 export default function App() {
+  //  const [isContactOpen, setIsContactOpen] = useState(false);
+   const [isOpen, setIsOpen] = useState(false);
    const services = [
     {
       title: "Cloud Migration",
@@ -50,7 +55,22 @@ export default function App() {
      
     <HeroComponent />
     {/* <CardComponent services={services} /> */}
+  {/* BUTTON: This opens the Contact Component */}
+      {/* <div className="mt-8 mb-12 z-20">
+        <Button 
+            onClick={() => setIsContactOpen(true)}
+            className="px-8 py-2 bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 text-white hover:bg-gradient-to-br focus:ring-4 focus:ring-purple-800 shadow-lg hover:scale-105 transition-transform"
+        >
+            <span className="text-lg font-bold">Get Started</span>
+        </Button>
+      </div> */}
+    <div>
+      <button className="mt-4" onClick={() => setIsOpen(true)}>Get Started</button>
+      {isOpen && <ContactDrawerComponent onClose={() => setIsOpen(false)} />}
+    </div>
 
+
+      {/* card section */}
  <div className="relative z-10 flex flex-col items-center text-center mt-16 px-6 space-y-6 w-full max-w-6xl">
             <h1 className="text-4xl md:text-5xl font-extrabold tracking-wide font-montserrat text-gray-800 mb-8">
               Our Services
@@ -69,7 +89,7 @@ export default function App() {
                   <p className="font-normal text-gray-700 dark:text-gray-400">
                     {service.description}
                   </p>
-                  <Button className="mt-4">Learn More Link</Button>
+                  <Button className="mt-4">Learn More</Button>
                 </Card>
               ))}
             </div>
@@ -92,7 +112,20 @@ export default function App() {
       </div>
 
 
+ {/* --- HERE IS THE CONTACT COMPONENT --- */}
+      {/* It sits right before the footer. It is invisible until isOpen becomes true. */}
+      {/* <ContactComponent 
+        isOpen={isContactOpen} 
+        onClose={() => setIsContactOpen(false)} 
+      /> */}
 
+ 
+    
+
+   
+
+      {/* 3. Drop the component here */}
+     
 
     <FooterComponent />
     </div>
