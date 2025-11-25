@@ -21,7 +21,7 @@ export default function CardComponent() {
                   <p className="font-normal text-gray-700 dark:text-gray-400">
                     {service.description}
                   </p>
-                  <Button className="mt-4">Learn More Link</Button>
+                  <Button className="mt-4">Learn More </Button>
                 </Card>
               ))}
             </div>
