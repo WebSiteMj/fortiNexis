@@ -19,7 +19,7 @@ export default function App() {
  <div className="min-h-screen bg-gradient-to-br from-blue-200 to-blue-300 flex 
  flex-col items-center justify-start relative overflow-hidden">
     
-    <HeaderComponent />
+    <HeaderComponent  openContact={() => setIsContactOpen(true)}/>
     <HeroComponent />
    
 
@@ -51,6 +51,8 @@ export default function App() {
         onClose={() => setIsContactOpen(false)} 
       />
      
+      
+
 
     <FooterComponent />
     </div>

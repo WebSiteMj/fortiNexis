@@ -1,30 +1,26 @@
 import React, { useState } from "react";
 import { HiBars3, HiXMark, HiMagnifyingGlass, HiUserCircle } from "react-icons/hi2";
 
-export default function HeaderComponent() {
+export default function HeaderComponent({ openContact }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+ 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
   return (
-    // Removed 'container' and 'mx-auto' to allow full-width stretching
-         <header className="bg-[#1E293B] text-slate-200 shadow-lg sticky top-0 z-50 w-full border-b border-slate-700">   
-      {/* w-full ensures it uses 100% width, px classes keep slight padding from the edges */}
+    <header className="bg-[#1E293B] text-slate-200 shadow-lg sticky top-0 z-50 w-full border-b border-slate-700">   
       <div className="w-full px-4 sm:px-8 lg:px-12">
         <div className="flex items-center justify-between h-20">
           
           {/* 1. LOGO SECTION */}
           <div className="flex-shrink-0 cursor-pointer flex items-center gap-2">
-            {/* Optional: Add an icon or image here if needed */}
            <h1 className="text-2xl font-bold tracking-wide whitespace-nowrap text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-sky-400">
              Forti Nexis 
             </h1>
           </div>
 
           {/* 2. DESKTOP SEARCH BAR */}
-          {/* Added mx-auto to center it, but it will flex within the available space */}
           <div className="hidden md:flex flex-1 max-w-2xl mx-10 relative">
             <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
               <HiMagnifyingGlass className="h-5 w-5 text-gray-400" />
@@ -42,7 +38,18 @@ export default function HeaderComponent() {
               <a href="#" className="hover:text-green-400 transition">Home</a>
               <a href="#" className="hover:text-green-400 transition">Services</a>
               <a href="#" className="hover:text-green-400 transition">About Us</a>
-              <a href="#" className="hover:text-green-400 transition">Contact</a>
+              
+              <a 
+                href="#" 
+                className="hover:text-green-400 transition"   
+                onClick={(e) => {
+                  e.preventDefault(); 
+                  openContact();
+                }} 
+              >
+                Contact
+              </a>
+              
             </nav>
             
             {/* User Icon / CTA Button */}
@@ -91,7 +98,16 @@ export default function HeaderComponent() {
               <a href="#" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-[#3e6666] hover:text-white transition">Home</a>
               <a href="#" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-[#3e6666] hover:text-white transition">Services</a>
               <a href="#" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-[#3e6666] hover:text-white transition">About Us</a>
-              <a href="#" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-[#3e6666] hover:text-white transition">Contact</a>
+              
+              <a href="#" onClick={(e) => {
+                  e.preventDefault(); 
+                  setIsMenuOpen(false); 
+                  openContact(); 
+                }}
+                className="block px-3 py-2 rounded-md text-base font-medium hover:bg-[#3e6666] hover:text-white transition"
+              >
+                Contact
+              </a>
             </nav>
             
             {/* Mobile User Profile Section */}
@@ -100,8 +116,8 @@ export default function HeaderComponent() {
                     <HiUserCircle className="h-10 w-10 text-gray-300" />
                 </div>
                 <div className="ml-3">
-                    <div className="text-base font-medium leading-none text-white">User Name</div>
-                    <div className="text-sm font-medium leading-none text-gray-400 mt-1">user@example.com</div>
+                    <div className="text-base font-medium leading-none text-white">Web</div>
+                    <div className="text-sm font-medium leading-none text-gray-400 mt-1">webSiteMj@hhotmail.com</div>
                 </div>
             </div>
 
