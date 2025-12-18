@@ -1,25 +1,19 @@
 import { useState } from "react";
-import React from "react";
-import { Button, Card, Footer } from "flowbite-react";
-import AccordionComponent from "./components/AccordionComponent";
+import { Button } from "flowbite-react";
 import HeroComponent from "./components/HeroComponent";
 import CardComponent from "./components/CardsComponent";
 import FooterComponent from "./components/FooterComponent";
 import HeaderComponent from "./components/HeaderComponent";
-import LearnMoreComponent from "./components/LearnMoreComponent";
 import ContactDrawerComponent from "./components/ContactDrawerComponent";
-
 
 export default function App() {
    const [isContactOpen, setIsContactOpen] = useState(false);
-   const [showLearnMore, setShowLearnMore] = useState(false);
-
    
   return (
  <div className="min-h-screen bg-gradient-to-br from-blue-200 to-blue-300 flex 
  flex-col items-center justify-start relative overflow-hidden">
-    
-    <HeaderComponent  openContact={() => setIsContactOpen(true)}/>
+
+    <HeaderComponent  openContact={() => setIsContactOpen(true)} />
     <HeroComponent />
    
 
@@ -50,9 +44,6 @@ export default function App() {
         isOpen={isContactOpen} 
         onClose={() => setIsContactOpen(false)} 
       />
-     
-      
-
 
     <FooterComponent />
     </div>
